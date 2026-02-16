@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 
 export const metadata = {
   title: 'Aluminiumfenster Aluprof MB-45, MB-79N, MB-86N & MB-104N | Gebrüder Müller',
-  description: 'Aluprof MB-45 (kalt), MB-79N, MB-86N & MB-104N – schlanke Profile, Passivhaus-tauglich, hoher Schallschutz und Einbruchschutz.',
+  description: 'Aluprof MB-45 (kalt), MB-79N, MB-86N & MB-104N – schlanke Profile, Passivhaus-tauglich, hoher Schallschutz und Einbruchschutz für Warendorf und Osnabrück.',
 }
 
 export default function Aluminiumfenster() {
@@ -19,7 +19,7 @@ export default function Aluminiumfenster() {
               Aluprof Aluminiumfenster – MB-45 • MB-79N • MB-86N • MB-104N
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Vom kalten Innenraumsystem bis zum Passivhaus-Premium – schlanke Profile für moderne Architektur und höchste Anforderungen
+              Vom kalten Innenraumsystem bis zum Passivhaus-Premium – schlanke Profile für moderne Architektur und höchste Anforderungen in Warendorf, Osnabrück und Münsterland
             </p>
             <Link
               href="/kontakt"
@@ -39,7 +39,7 @@ export default function Aluminiumfenster() {
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Wir setzen auf die bewährten Aluprof MB-Serien – von kalten Innenraumsystemen (MB-45) bis hin zu hochdämmenden Passivhaus-Systemen (MB-104N). Schlanke Profile, höchste Stabilität und maximale Gestaltungsfreiheit für Neubau, Sanierung und Gewerbe.
+            Wir setzen auf die bewährten Aluprof MB-Serien – von kalten Innenraumsystemen (MB-45) bis hin zu hochdämmenden Passivhaus-Systemen (MB-104N). Schlanke Profile, höchste Stabilität und maximale Gestaltungsfreiheit für Neubau, Sanierung und Gewerbe in Warendorf und Umgebung.
           </p>
         </Container>
       </section>
@@ -84,11 +84,13 @@ export default function Aluminiumfenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/MB45.png" // ← dein Profilbild für MB-45 hier einfügen
-                alt="Profil des Aluprof MB-45 kalten Aluminiumsystems"
+                src="/MB45.png"
+                alt="Querschnitt Aluprof MB-45 kaltes Aluminiumsystem – 45 mm Bautiefe, extrem schlanke Ansichtsbreiten für Innentüren und Wintergärten"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -104,7 +106,7 @@ export default function Aluminiumfenster() {
                 MB-79N – Das Standard-Wärmeschutzsystem
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-79N ist ein ausgewogenes Wärmeschutzsystem mit 79 mm Bautiefe – solide Dämmung, schlanke Optik und vielseitig einsetzbar für Neubau und Sanierung.
+                MB-79N ist ein ausgewogenes Wärmeschutzsystem mit 79 mm Bautiefe – solide Dämmung, schlanke Optik und vielseitig einsetzbar für Neubau und Sanierung in Warendorf und Osnabrück.
               </p>
 
               {/* Features-Übersicht */}
@@ -135,11 +137,13 @@ export default function Aluminiumfenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/MB79.png" // ← dein Profilbild für MB-79N hier einfügen
-                alt="Profil des Aluprof MB-79N Aluminiumfenstersystems"
+                src="/MB79.png"
+                alt="Querschnitt Aluprof MB-79N Wärmeschutzsystem – 79 mm Bautiefe, solide Dämmung und hohe Stabilität für Neubau und Sanierung"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -155,7 +159,7 @@ export default function Aluminiumfenster() {
                 MB-86N – Das hochdämmende System
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-86N mit 86 mm Bautiefe bietet exzellente Wärmedämmung und ist passivhausgeeignet – ideal für energieeffiziente Gebäude mit großen Glasflächen.
+                MB-86N mit 86 mm Bautiefe bietet exzellente Wärmedämmung und ist passivhausgeeignet – ideal für energieeffiziente Gebäude mit großen Glasflächen in Warendorf und Osnabrück.
               </p>
 
               {/* Features-Übersicht */}
@@ -186,11 +190,13 @@ export default function Aluminiumfenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/MB86.png" // ← dein Profilbild für MB-86N hier einfügen
-                alt="Profil des Aluprof MB-86N Aluminiumfenstersystems"
+                src="/MB86.png"
+                alt="Querschnitt Aluprof MB-86N hochdämmendes Aluminiumsystem – 86 mm Bautiefe, passivhausgeeignet für große Glasflächen"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -222,7 +228,7 @@ export default function Aluminiumfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Schallschutz bis Rw 48 dB
+                  Maximaler Schallschutz bis Rw 48 dB
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -237,11 +243,13 @@ export default function Aluminiumfenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/MB104.png" // ← dein Profilbild für MB-104N hier einfügen
-                alt="Profil des Aluprof MB-104N Aluminiumfenstersystems"
+                src="/MB104.png"
+                alt="Querschnitt Aluprof MB-104N Premium-Passivhaus-System – 104 mm Bautiefe, maximale Dämmung und Stabilität für energieeffiziente Gebäude"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -256,7 +264,7 @@ export default function Aluminiumfenster() {
               Bereit für Ihr neues Aluprof Aluminiumfenster?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir beraten Sie individuell zu MB-45, MB-79N, MB-86N oder MB-104N – kostenlos und vor Ort.
+              Wir beraten Sie individuell zu MB-45, MB-79N, MB-86N oder MB-104N – kostenlos und vor Ort in Warendorf und Umgebung.
             </p>
             <Link
               href="/kontakt"

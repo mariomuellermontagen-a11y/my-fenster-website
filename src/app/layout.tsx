@@ -9,30 +9,32 @@ import CookieBanner from '@/components/CookieBanner'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Gebrüder Müller Fenster GmbH – Fenster & Türen Osnabrück, Warendorf',
+  title: 'Gebrüder Müller Fenster GmbH – Fenster & Türen Warendorf, Osnabrück',
   description:
-    'Hochwertige Fenster, Haustüren, Hebeschiebetüren und Projektabwicklung im Raum Osnabrück & Tecklenburger Land. Gebrüder Müller Fenster GmbH – professionelle Montage und Beratung in Warendorf und Umgebung.',
+    'Professionelle Montage, Austausch und Wartung von Kunststofffenstern, Aluminiumfenstern, Holzfenstern, Haustüren und Hebeschiebetüren. Gebrüder Müller Fenster GmbH – Ihr Partner in Warendorf, Osnabrück und Münsterland.',
   keywords: [
     'Fenster Montage Warendorf',
     'Fenster Osnabrück',
-    'Kunststofffenster',
-    'Aluminiumfenster',
+    'Kunststofffenster Warendorf',
+    'Aluminiumfenster Osnabrück',
+    'Holzfenster Münsterland',
     'Hebeschiebetüren',
+    'Haustüren Montage',
+    'Fensterbau Tecklenburger Land',
     'Gebrüder Müller Fenster',
-    'Haustüren',
-    'Fensterbau Münsterland',
   ],
   openGraph: {
     title: 'Gebrüder Müller Fenster GmbH',
     description:
       'Professionelle Montage von Fenstern, Türen und Hebeschiebetüren in Warendorf, Osnabrück und Umgebung.',
-    url: 'https://www.gebrueder-mueller-fenster.de', // ← später deine echte Domain
+    url: 'https://www.gebrueder-mueller-fenster.de', // ← später echte Domain einfügen
     siteName: 'Gebrüder Müller Fenster GmbH',
     images: [
       {
-        url: '/Hero.jpg', // ← oder dein Logo / Hero-Bild
+        url: '/Hero.jpg',
         width: 1200,
         height: 630,
+        alt: 'Gebrüder Müller Fenster GmbH – Professionelle Fenster- und Tür-Montage in Warendorf',
       },
     ],
     locale: 'de_DE',
@@ -48,7 +50,10 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
-        {/* Structured Data – LocalBusiness Schema für Google Business Profile & Local SEO */}
+        {/* Verhindert Auto-Linking von Telefonnummern/E-Mails/Adressen auf Mobile – oft Ursache für Hydration-Errors */}
+        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+
+        {/* Structured Data – LocalBusiness für Google Business Profile & Local SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -58,9 +63,9 @@ export default function RootLayout({
               name: "Gebrüder Müller Fenster GmbH",
               description:
                 "Professionelle Montage, Handel und Beratung von Fenstern, Haustüren, Hebeschiebetüren und Sonnenschutz in Warendorf und Umgebung (Osnabrück, Münsterland, Tecklenburger Land).",
-              url: "https://www.gebrueder-mueller-fenster.de", // ← später echte Domain
+              url: "https://www.gebrueder-mueller-fenster.de",
               telephone: "+491631124962",
-              email: "info@gebrueder-mueller-fenster.de", // ← falls du eine hast, sonst weglassen
+              email: "info@gebrueder-mueller-fenster.de",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Müssinger Str. 4",
@@ -80,8 +85,7 @@ export default function RootLayout({
                   opens: "08:00",
                   closes: "17:00",
                 },
-                // Samstag / Sonntag – falls ihr geöffnet habt, sonst weglassen oder anpassen
-                // Beispiel für Samstag:
+                // Samstag – falls ihr geöffnet habt, sonst löschen oder anpassen
                 // {
                 //   "@type": "OpeningHoursSpecification",
                 //   dayOfWeek: "Saturday",
@@ -89,19 +93,21 @@ export default function RootLayout({
                 //   closes: "13:00",
                 // },
               ],
-              image: "/logo-gebrueder-mueller.svg", // ← oder /Hero.jpg
+              image: "/logo-gebrueder-mueller.svg",
               priceRange: "€€",
               sameAs: [
-                "https://www.instagram.com/gebruedermuellerfenster", // ← deine echten Social-Links
-                // "https://www.facebook.com/...", 
-                // "https://www.youtube.com/..."
+                "https://www.instagram.com/gebruedermuellerfenster",
+                // Weitere Social-Links, falls vorhanden
               ],
             }),
           }}
         />
       </head>
 
-      <body className={inter.className}>
+      <body
+        className={inter.className}
+        suppressHydrationWarning={true} // Temporärer Schutz gegen Hydration-Warnungen (Browser-Extensions, Mobile-Formatierung)
+      >
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

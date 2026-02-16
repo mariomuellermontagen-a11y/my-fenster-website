@@ -6,12 +6,12 @@ export default function LeistungenTeaser() {
   const teasers = [
     {
       title: 'Kunststofffenster',
-      description: 'Moderne 76–92 mm Systeme mit hervorragender Wärmedämmung, Schallschutz und Sicherheit.',
+      description: 'Moderne 76–92 mm Systeme mit hervorragender Wärmedämmung, Schallschutz und Sicherheit – ideal für Sanierung und Neubau in Warendorf und Osnabrück.',
       href: '/leistungen/kunststofffenster',
     },
     {
       title: 'Aluminiumfenster',
-      description: 'Schlanke, elegante Profile für große Glasflächen – langlebig und architektonisch anspruchsvoll.',
+      description: 'Schlanke, elegante Profile für große Glasflächen – langlebig, wartungsarm und architektonisch anspruchsvoll.',
       href: '/leistungen/aluminiumfenster',
     },
     {
@@ -25,7 +25,7 @@ export default function LeistungenTeaser() {
     <section className="py-16 md:py-20 bg-white">
       <Container>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          Unsere Kernleistungen
+          Unsere Kernleistungen im Überblick
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -33,7 +33,7 @@ export default function LeistungenTeaser() {
             <Link
               key={item.href}
               href={item.href}
-              className="group bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-all border border-gray-200 flex flex-col h-full text-center"
+              className="group bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-all duration-300 border border-gray-200 flex flex-col h-full text-center"
             >
               <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                 {item.title}
@@ -51,9 +51,9 @@ export default function LeistungenTeaser() {
         <div className="text-center mt-10">
           <Link
             href="/leistungen"
-            className="inline-block text-primary font-medium hover:underline"
+            className="inline-block text-primary font-medium hover:underline text-lg"
           >
-            Alle Leistungen ansehen →
+            Alle Leistungen entdecken →
           </Link>
         </div>
       </Container>

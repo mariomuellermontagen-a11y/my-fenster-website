@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 
 export const metadata = {
   title: 'Kunststofffenster GreenEvolution & BlueEvolution | Gebrüder Müller',
-  description: 'Salamander GreenEvolution AD/MD, BlueEvolution 82 MD & 92 MD – detaillierte Übersicht zu Bautiefen, Dämmung und Features für Neubau und Sanierung.',
+  description: 'Salamander GreenEvolution AD/MD, BlueEvolution 82 MD & 92 MD – detaillierte Übersicht zu Bautiefen, Dämmung und Features für Neubau und Sanierung in Warendorf und Osnabrück.',
 }
 
 export default function Kunststofffenster() {
@@ -19,7 +19,7 @@ export default function Kunststofffenster() {
               Salamander Kunststofffenster – GreenEvolution & BlueEvolution
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              GreenEvolution AD/MD • BlueEvolution 82 MD • BlueEvolution 92 MD – für höchste Energieeffizienz und Passivhaus-Standards
+              GreenEvolution AD/MD • BlueEvolution 82 MD • BlueEvolution 92 MD – für höchste Energieeffizienz und Passivhaus-Standards in Warendorf, Osnabrück und Münsterland
             </p>
             <Link
               href="/kontakt"
@@ -39,7 +39,7 @@ export default function Kunststofffenster() {
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Wir setzen auf die bewährten Salamander-Serien GreenEvolution und BlueEvolution – von Anschlag- bis Mitteldichtungssystemen. Ob Standard-Neubau oder Passivhaus: Finden Sie das passende Profil für Ihre Anforderungen.
+            Wir setzen auf die bewährten Salamander-Serien GreenEvolution und BlueEvolution – von Anschlag- bis Mitteldichtungssystemen. Ob Standard-Neubau oder Passivhaus: Finden Sie das passende Profil für Ihre Anforderungen in Warendorf und Umgebung.
           </p>
         </Container>
       </section>
@@ -53,7 +53,7 @@ export default function Kunststofffenster() {
                 GreenEvolution AD – Das Anschlagdichtungssystem
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Das GreenEvolution AD ist ein vielseitiges Anschlagdichtungssystem mit 76 mm Bautiefe – ideal für kosteneffiziente Neubauten und Sanierungen. Es bietet solide Dämmwerte und ist in zahlreichen Farben und Formen verfügbar.
+                Das GreenEvolution AD ist ein vielseitiges Anschlagdichtungssystem mit 76 mm Bautiefe – ideal für kosteneffiziente Neubauten und Sanierungen in Warendorf und Osnabrück. Es bietet solide Dämmwerte und ist in zahlreichen Farben und Formen verfügbar.
               </p>
 
               {/* Features-Übersicht */}
@@ -84,11 +84,13 @@ export default function Kunststofffenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/GE-AD.png" // ← dein Profilbild für GreenEvolution AD hier einfügen
-                alt="Profil des GreenEvolution AD Anschlagdichtungssystems"
+                src="/GE-AD.png"
+                alt="Querschnitt GreenEvolution AD Anschlagdichtungssystem – 76 mm Bautiefe, 5-Kammer-Profil für solide Wärmedämmung und Schallschutz"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -104,7 +106,7 @@ export default function Kunststofffenster() {
                 GreenEvolution MD – Das Mitteldichtungssystem
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Das GreenEvolution MD mit 76 mm Bautiefe und zusätzlicher Mitteldichtung bietet verbesserte Dämmung und Schallschutz – für energieeffiziente Projekte mit höheren Anforderungen.
+                Das GreenEvolution MD mit 76 mm Bautiefe und zusätzlicher Mitteldichtung bietet verbesserte Dämmung und Schallschutz – für energieeffiziente Projekte mit höheren Anforderungen in Warendorf und Osnabrück.
               </p>
 
               {/* Features-Übersicht */}
@@ -135,11 +137,13 @@ export default function Kunststofffenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/GE-MD.png" // ← dein Profilbild für GreenEvolution MD hier einfügen
-                alt="Profil des GreenEvolution MD Mitteldichtungssystems"
+                src="/GE-MD.png"
+                alt="Querschnitt GreenEvolution MD Mitteldichtungssystem – 76 mm Bautiefe mit zusätzlicher Mitteldichtung für verbesserte Dämmung und Schallschutz"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -155,7 +159,7 @@ export default function Kunststofffenster() {
                 BlueEvolution 82 MD – Das Mitteldichtungssystem
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                BlueEvolution 82 MD ist passivhausgeeignet, auch bei Funktionsgläsern. Es deckt anspruchsvolle Anforderungen an Dämmung und Design ab – ideal für energieeffiziente Neubauten und Sanierungen.
+                BlueEvolution 82 MD ist passivhausgeeignet, auch bei Funktionsgläsern. Es deckt anspruchsvolle Anforderungen an Dämmung und Design ab – ideal für energieeffiziente Neubauten und Sanierungen in Warendorf und Osnabrück.
               </p>
 
               {/* Features-Übersicht */}
@@ -186,11 +190,13 @@ export default function Kunststofffenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/BE82.png" // ← dein Profilbild für BlueEvolution 82 MD hier einfügen
-                alt="Profil des BlueEvolution 82 MD Mitteldichtungssystems"
+                src="/BE82.png"
+                alt="Querschnitt BlueEvolution 82 MD Mitteldichtungssystem – 82 mm Bautiefe, passivhausgeeignet für höchste Energieeffizienz"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -237,11 +243,13 @@ export default function Kunststofffenster() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/BE92.png" // ← dein Profilbild für BlueEvolution 92 MD hier einfügen
-                alt="Profil des BlueEvolution 92 MD Mitteldichtungssystems"
+                src="/BE92.png"
+                alt="Querschnitt BlueEvolution 92 MD Mitteldichtungssystem – 92 mm Bautiefe, maximale Dämmung und Stabilität für Passivhaus-Projekte"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>

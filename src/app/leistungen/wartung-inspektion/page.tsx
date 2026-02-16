@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 
 export const metadata = {
   title: 'Wartung & Inspektion von Fenstern & Türen | Gebrüder Müller',
-  description: 'Regelmäßige Wartung und Inspektion verlängern die Lebensdauer Ihrer Fenster und Türen enorm – vermeiden Sie teure Schäden mit unseren Wartungsverträgen.',
+  description: 'Regelmäßige Wartung und Inspektion verlängern die Lebensdauer Ihrer Fenster und Türen enorm – vermeiden Sie teure Schäden mit unseren Wartungsverträgen in Warendorf und Osnabrück.',
 }
 
 export default function WartungInspektion() {
@@ -18,7 +18,7 @@ export default function WartungInspektion() {
               Wartung & Inspektion – Langlebigkeit garantiert
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Regelmäßige Pflege vermeidet teure Schäden und verlängert die Lebensdauer Ihrer Fenster und Türen um viele Jahre.
+              Regelmäßige Pflege vermeidet teure Schäden und verlängert die Lebensdauer Ihrer Fenster und Türen um viele Jahre – in Warendorf, Osnabrück und Umgebung.
             </p>
             <Link
               href="/kontakt"
@@ -34,11 +34,11 @@ export default function WartungInspektion() {
       <section className="py-16 md:py-24">
         <Container>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Warum regelmäßige Wartung unverzichtbar ist
+            Warum regelmäßige Wartung & Inspektion unverzichtbar ist
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Fenster und Türen sind täglich Wind, Wetter, Temperaturschwankungen und mechanischer Belastung ausgesetzt. Ohne regelmäßige Pflege und Inspektion entstehen schnell vermeidbare Schäden: undichte Dichtungen, verschlissene Beschläge, Korrosion oder verzogene Profile. Regelmäßige Wartung verhindert genau das – sie erhöht die Lebensdauer enorm und spart langfristig Kosten.
+            Fenster und Türen sind täglich Wind, Wetter, Temperaturschwankungen und mechanischer Belastung ausgesetzt. Ohne regelmäßige Pflege entstehen schnell vermeidbare Schäden: undichte Dichtungen, verschlissene Beschläge, Korrosion oder verzogene Profile. Regelmäßige Wartung verhindert genau das – sie erhöht die Lebensdauer enorm und spart langfristig Kosten in Warendorf und Osnabrück.
           </p>
         </Container>
       </section>
@@ -126,13 +126,13 @@ export default function WartungInspektion() {
               Lassen Sie Ihre Fenster & Türen professionell warten
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Ob einmalige Wartung oder jährlicher Vertrag – wir kümmern uns um Langlebigkeit und Werterhalt.
+              Ob einmalige Wartung oder jährlicher Vertrag – wir kümmern uns um Langlebigkeit und Werterhalt in Warendorf und Umgebung.
             </p>
             <Link
               href="/kontakt"
               className="inline-block bg-white text-primary px-10 py-5 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             >
-              Wartung anfragen oder Vertrag besprechen
+              Jetzt Wartungstermin vereinbaren
             </Link>
           </div>
         </Container>

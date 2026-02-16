@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 
 export const metadata = {
   title: 'Hebeschiebetüren Kunststoff, Aluminium & Holz | Gebrüder Müller',
-  description: 'Großformatige Hebeschiebetüren – Salamander EvolutionDrive (Kunststoff), Aluprof MB-77HS (Aluminium) und Holz 68/80 mm mit Gutmann-Alu-Deckschalen.',
+  description: 'Großformatige Hebeschiebetüren – Salamander EvolutionDrive (Kunststoff), Aluprof MB-77HS (Aluminium) und Holz 68/80 mm mit Gutmann-Alu-Deckschalen – barrierefrei & hochgedämmt in Warendorf und Osnabrück.',
 }
 
 export default function Hebeschiebetueren() {
@@ -19,7 +19,7 @@ export default function Hebeschiebetueren() {
               Hebeschiebetüren – Kunststoff, Aluminium & Holz
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Barrierefrei, hochgedämmt und lichtdurchflutet – für fließende Übergänge nach draußen
+              Barrierefrei, hochgedämmt und lichtdurchflutet – für fließende Übergänge nach draußen in Warendorf, Osnabrück und Münsterland
             </p>
             <Link
               href="/kontakt"
@@ -53,7 +53,7 @@ export default function Hebeschiebetueren() {
                 Salamander EvolutionDrive – Kunststoff-Hebeschiebetüren
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                EvolutionDrive ist ein modernes, hochgedämmtes Kunststoff-Hebeschiebesystem mit exzellenter Wärmedämmung und einfacher Bedienung – ideal für energieeffiziente Neubauten und Sanierungen mit großen Öffnungen.
+                EvolutionDrive ist ein modernes, hochgedämmtes Kunststoff-Hebeschiebesystem mit exzellenter Wärmedämmung und einfacher Bedienung – ideal für energieeffiziente Neubauten und Sanierungen mit großen Öffnungen in Warendorf und Osnabrück.
               </p>
 
               {/* Features-Übersicht */}
@@ -88,11 +88,13 @@ export default function Hebeschiebetueren() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/ED82.png" // ← dein Profilbild hier einfügen
-                alt="Profil des Salamander EvolutionDrive Kunststoff-Hebeschiebesystems"
+                src="/ED82.png"
+                alt="Querschnitt Salamander EvolutionDrive Kunststoff-Hebeschiebesystem – hochgedämmt, barrierefrei, Flügelgewichte bis 400 kg"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -108,7 +110,7 @@ export default function Hebeschiebetueren() {
                 Aluprof MB-77HS – Aluminium-Hebeschiebetüren
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-77HS ist ein hochdämmendes Aluminium-Hebeschiebesystem mit 77 mm Bautiefe – schlanke Profile, hohe Stabilität und exzellente Wärmedämmung. Ideal für moderne Architektur mit großen Öffnungen und hohen Anforderungen an Design und Energieeffizienz.
+                MB-77HS ist ein hochdämmendes Aluminium-Hebeschiebesystem mit 77 mm Bautiefe – schlanke Profile, hohe Stabilität und exzellente Wärmedämmung. Ideal für moderne Architektur mit großen Öffnungen und hohen Anforderungen in Warendorf und Osnabrück.
               </p>
 
               {/* Features-Übersicht */}
@@ -143,11 +145,13 @@ export default function Hebeschiebetueren() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/HS77.png" // ← dein Profilbild hier einfügen
-                alt="Profil des Aluprof MB-77HS Aluminium-Hebeschiebesystems"
+                src="/HS77.png"
+                alt="Querschnitt Aluprof MB-77HS Aluminium-Hebeschiebesystem – 77 mm Bautiefe, barrierefrei, Flügelgewichte bis 600 kg"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -198,11 +202,13 @@ export default function Hebeschiebetueren() {
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/HS80.png" // ← dein Profilbild für Holz-HST hier einfügen
-                alt="Profil des Holz-Hebeschiebesystems mit optionaler Gutmann-Alu-Deckschale"
+                src="/HS80.png"
+                alt="Querschnitt Holz-Hebeschiebetüren 68/80 mm mit optionaler Gutmann-Alu-Deckschale – natürliche Optik, barrierefrei und witterungsbeständig"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
               />
             </div>
           </div>
@@ -217,7 +223,7 @@ export default function Hebeschiebetueren() {
               Bereit für Ihre neuen Hebeschiebetüren?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir beraten Sie individuell zu Kunststoff (EvolutionDrive), Aluminium (MB-77HS) oder Holz (68/80 mm) – kostenlos und vor Ort.
+              Wir beraten Sie individuell zu Kunststoff (EvolutionDrive), Aluminium (MB-77HS) oder Holz (68/80 mm) – kostenlos und vor Ort in Warendorf und Umgebung.
             </p>
             <Link
               href="/kontakt"
