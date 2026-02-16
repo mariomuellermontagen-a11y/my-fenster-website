@@ -3,6 +3,7 @@
 
 import { useState } from 'react'
 import { Container } from '@/components/Container'
+import GoogleMaps from '@/components/GoogleMaps'   // ← Karte wird importiert
 
 export default function Kontakt() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
@@ -163,6 +164,11 @@ export default function Kontakt() {
             <a href="tel:+491631124962" className="text-2xl font-bold text-primary hover:underline">
               0163 1124962
             </a>
+          </div>
+
+          {/* Google Maps Karte – jetzt integriert */}
+          <div className="mt-20">
+            <GoogleMaps />
           </div>
         </div>
       </Container>
