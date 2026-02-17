@@ -11,7 +11,7 @@ const navItems = [
   { label: 'Über uns', href: '/ueber-uns' },
   { label: 'Leistungen', href: '/leistungen' },
   { label: 'Referenzen', href: '/referenzen' },
-  { label: 'Kontakt', href: '/kontakt' },
+  // 'Kontakt' komplett entfernt
 ]
 
 export default function Header() {
