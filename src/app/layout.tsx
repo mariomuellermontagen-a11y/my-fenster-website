@@ -50,8 +50,14 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
-        {/* Verhindert Auto-Linking von Telefonnummern/E-Mails/Adressen auf Mobile – oft Ursache für Hydration-Errors */}
+        {/* Verhindert Auto-Linking von Telefonnummern/E-Mails/Adressen auf Mobile */}
         <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+
+        {/* Favicons – Haupt-Favicon + Fallback + Apple Touch + Manifest */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         {/* Structured Data – LocalBusiness für Google Business Profile & Local SEO */}
         <script
@@ -106,7 +112,7 @@ export default function RootLayout({
 
       <body
         className={inter.className}
-        suppressHydrationWarning={true} // Temporärer Schutz gegen Hydration-Warnungen (Browser-Extensions, Mobile-Formatierung)
+        suppressHydrationWarning={true} // Temporärer Schutz gegen Hydration-Warnungen
       >
         <Header />
         <main className="min-h-screen">{children}</main>

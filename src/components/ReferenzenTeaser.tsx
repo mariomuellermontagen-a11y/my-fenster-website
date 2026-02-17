@@ -2,29 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container } from './Container'
+import { referenzen } from '@/data/referenzen' // ← zentrale Daten
 
 export default function ReferenzenTeaser() {
-  const projects = [
-    {
-      title: 'Kernsanierung Warendorf',
-      description: 'Kompletter Fensteraustausch in einem Altbau mit statischer Prüfung und energetischer Optimierung.',
-      image: '/referenzen/warendorf.jpg',
-      alt: 'Referenzprojekt Warendorf: Kernsanierung mit Fensteraustausch und Haustür – Gebrüder Müller Fenster GmbH',
-    },
-    {
-      title: 'Hebeschiebetüren Osnabrück',
-      description: 'Großformatige Elemente mit statischen Durchbrüchen in einem modernen Umbau.',
-      image: '/referenzen/osnabrueck.jpg',
-      alt: 'Referenz Osnabrück: Hebeschiebetüren und Fensterumbau in Wohnhaus – Gebrüder Müller Fenster GmbH',
-    },
-    {
-      title: 'Öffentliches Gebäude Unna',
-      description: 'Austausch von 48 Fensterelementen in einer öffentlichen Baumaßnahme mit präziser Koordination.',
-      image: '/referenzen/unna.jpg',
-      alt: 'Referenz Unna: 48 Fenster Montage in öffentlichem Gebäude – Gebrüder Müller Fenster GmbH',
-    },
-  ]
-
   return (
     <section className="py-16 md:py-24 bg-white">
       <Container>
@@ -36,7 +16,7 @@ export default function ReferenzenTeaser() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {referenzen.map((project, index) => (
             <div
               key={index}
               className="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
@@ -53,7 +33,9 @@ export default function ReferenzenTeaser() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">{project.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">
+                  {project.title} {project.jahr}
+                </h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
               </div>
             </div>

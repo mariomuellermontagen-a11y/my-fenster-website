@@ -2,15 +2,24 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
+import Breadcrumbs from '@/components/Breadcrumbs' // ← neu importiert
 
 export const metadata = {
   title: 'Kunststofffenster GreenEvolution & BlueEvolution | Gebrüder Müller',
-  description: 'Salamander GreenEvolution AD/MD, BlueEvolution 82 MD & 92 MD – detaillierte Übersicht zu Bautiefen, Dämmung und Features für Neubau und Sanierung in Warendorf und Osnabrück.',
+  description: 'Salamander GreenEvolution AD/MD & BlueEvolution 82/92 MD – hohe Energieeffizienz, Schallschutz und Sicherheit für Neubau & Sanierung in Warendorf und Osnabrück.',
 }
 
 export default function Kunststofffenster() {
   return (
     <div className="bg-white">
+      {/* Breadcrumbs – direkt oben eingebaut */}
+      <Breadcrumbs
+        items={[
+          { label: 'Leistungen', href: '/leistungen' },
+          { label: 'Kunststofffenster' }
+        ]}
+      />
+
       {/* Hero-Bereich */}
       <section className="bg-gray-900 text-white py-16 md:py-24">
         <Container>
@@ -224,7 +233,7 @@ export default function Kunststofffenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Passivhaus ohne Kryptonfüllung – auch bei Funktionsgläsern
+                  Passivhaus ohne Krypton – kosteneffizient
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -232,11 +241,11 @@ export default function Kunststofffenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 / RC3
+                  Einbruchhemmung RC2 / RC3 / RC4
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Höchste Stabilität für große Formate
+                  Höchste Stabilität für große Formate und schwere Verglasungen
                 </li>
               </ul>
             </div>

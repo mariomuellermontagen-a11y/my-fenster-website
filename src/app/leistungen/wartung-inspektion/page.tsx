@@ -1,6 +1,7 @@
 // src/app/leistungen/wartung-inspektion/page.tsx
 import Link from 'next/link'
 import { Container } from '@/components/Container'
+import Breadcrumbs from '@/components/Breadcrumbs' // ← neu importiert
 
 export const metadata = {
   title: 'Wartung & Inspektion von Fenstern & Türen | Gebrüder Müller',
@@ -10,6 +11,14 @@ export const metadata = {
 export default function WartungInspektion() {
   return (
     <div className="bg-white">
+      {/* Breadcrumbs – direkt oben eingebaut */}
+      <Breadcrumbs
+        items={[
+          { label: 'Leistungen', href: '/leistungen' },
+          { label: 'Wartung & Inspektion' }
+        ]}
+      />
+
       {/* Hero-Bereich */}
       <section className="bg-gray-900 text-white py-16 md:py-24">
         <Container>

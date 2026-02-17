@@ -1,15 +1,24 @@
 // src/app/leistungen/projektgeschaeft/page.tsx
 import Link from 'next/link'
 import { Container } from '@/components/Container'
+import Breadcrumbs from '@/components/Breadcrumbs' // ← neu importiert
 
 export const metadata = {
   title: 'Projektgeschäft – Fenster & Türen für Bauträger & öffentliche Bauvorhaben | Gebrüder Müller',
-  description: 'Professionelle Abwicklung großer Projekte – von CAD-Planung über Statik bis zur termintreuen Montage für Bauträger, Gewerbe und öffentliche Auftraggeber.',
+  description: 'Professionelle Abwicklung großer Projekte – von CAD-Planung über Statik bis zur termintreuen Montage für Bauträger, Gewerbe und öffentliche Auftraggeber in Warendorf, Osnabrück und Münsterland.',
 }
 
 export default function Projektgeschaeft() {
   return (
     <div className="bg-white">
+      {/* Breadcrumbs – direkt oben eingebaut */}
+      <Breadcrumbs
+        items={[
+          { label: 'Leistungen', href: '/leistungen' },
+          { label: 'Projektgeschäft' }
+        ]}
+      />
+
       {/* Hero-Bereich */}
       <section className="bg-gray-900 text-white py-16 md:py-24">
         <Container>
@@ -18,7 +27,7 @@ export default function Projektgeschaeft() {
               Projektgeschäft – Großprojekte termintreu umgesetzt
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Von der Ausschreibung bis zur Abnahme – zuverlässige Fenster- und Tür-Lösungen für Bauträger, Gewerbe und öffentliche Bauvorhaben
+              Von der Ausschreibung bis zur Abnahme – zuverlässige Fenster- und Tür-Lösungen für Bauträger, Gewerbe und öffentliche Bauvorhaben in Warendorf, Osnabrück und Münsterland
             </p>
             <Link
               href="/kontakt"
@@ -38,7 +47,7 @@ export default function Projektgeschaeft() {
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Im Projektgeschäft zählen Präzision, Termintreue und technische Kompetenz. Wir begleiten Bauträger, Architekten, Generalunternehmer und öffentliche Auftraggeber von der Planung bis zur schlüsselfertigen Übergabe – mit CAD-Detailplanung, statischen Nachweisen, bauphysikalischen Berechnungen und sauberer Montage.
+            Im Projektgeschäft zählen Präzision, Termintreue und technische Kompetenz. Wir begleiten Bauträger, Architekten, Generalunternehmer und öffentliche Auftraggeber von der Planung bis zur schlüsselfertigen Übergabe – mit CAD-Detailplanung, statischen Nachweisen, bauphysikalischen Berechnungen und sauberer Montage in Warendorf und Umgebung.
           </p>
         </Container>
       </section>
@@ -147,13 +156,13 @@ export default function Projektgeschaeft() {
               Ihr nächstes Projekt mit uns?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir übernehmen die komplette Abwicklung – termintreu, technisch einwandfrei und zuverlässig.
+              Wir übernehmen die komplette Abwicklung – termintreu, technisch einwandfrei und zuverlässig in Warendorf und Umgebung.
             </p>
             <Link
               href="/kontakt"
               className="inline-block bg-white text-primary px-10 py-5 rounded-xl text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
             >
-              Projekt besprechen
+              Jetzt Projekt besprechen & Angebot erhalten
             </Link>
           </div>
         </Container>

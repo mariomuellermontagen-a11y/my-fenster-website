@@ -2,30 +2,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
+import { referenzen } from '@/data/referenzen' // ← zentrale Daten
 
 export default function Referenzen() {
-  const referenzen = [
-    {
-      title: 'Kernsanierung Warendorf',
-      description: 'Kompletter Fensteraustausch in einem Altbau mit statischer Prüfung und energetischer Optimierung.',
-      image: '/referenzen/warendorf.jpg',
-      jahr: '2024',
-    },
-    {
-      title: 'Hebeschiebetüren Osnabrück',
-      description: 'Umfangreiche Umbauten inklusive statischer Durchbrüche für großformatige Hebeschiebetüren.',
-      image: '/referenzen/osnabrueck.jpg',
-      jahr: '2025',
-    },
-    {
-      title: 'Öffentliches Gebäude Unna',
-      description: 'Austausch von 48 Fensterelementen im Rahmen einer öffentlichen Baumaßnahme.',
-      image: '/referenzen/unna.jpg',
-      jahr: '2023',
-    },
-    // Hier kannst du später weitere hinzufügen
-  ]
-
   return (
     <div className="bg-white py-16 md:py-24">
       <Container>
@@ -43,7 +22,7 @@ export default function Referenzen() {
               <div className="relative h-64">
                 <Image
                   src={ref.image}
-                  alt={ref.title}
+                  alt={ref.alt}
                   fill
                   className="object-cover"
                 />

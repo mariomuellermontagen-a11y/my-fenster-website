@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
+import Breadcrumbs from '@/components/Breadcrumbs' // ← neu importiert
 
 export const metadata = {
   title: 'Aluminiumfenster Aluprof MB-45, MB-79N, MB-86N & MB-104N | Gebrüder Müller',
@@ -11,6 +12,14 @@ export const metadata = {
 export default function Aluminiumfenster() {
   return (
     <div className="bg-white">
+      {/* Breadcrumbs – direkt oben eingebaut */}
+      <Breadcrumbs
+        items={[
+          { label: 'Leistungen', href: '/leistungen' },
+          { label: 'Aluminiumfenster' }
+        ]}
+      />
+
       {/* Hero-Bereich */}
       <section className="bg-gray-900 text-white py-16 md:py-24">
         <Container>

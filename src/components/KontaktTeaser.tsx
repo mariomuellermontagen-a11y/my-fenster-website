@@ -23,7 +23,10 @@ export default function KontaktTeaser() {
 
           <p className="mt-8 text-base md:text-lg opacity-90">
             Oder direkt anrufen:  
-            <a href="tel:+491631124962" className="underline hover:text-white font-medium ml-2">
+            <a 
+              href="tel:+491631124962" 
+              className="underline hover:text-white font-medium ml-2 transition-colors"
+            >
               0163 1124962
             </a>
           </p>
