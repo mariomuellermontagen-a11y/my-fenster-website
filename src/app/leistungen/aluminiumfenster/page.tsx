@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import Breadcrumbs from '@/components/Breadcrumbs' // ← neu importiert
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
   title: 'Aluminiumfenster Aluprof MB-45, MB-79N, MB-86N & MB-104N | Gebrüder Müller',
@@ -12,7 +12,7 @@ export const metadata = {
 export default function Aluminiumfenster() {
   return (
     <div className="bg-white">
-      {/* Breadcrumbs – direkt oben eingebaut */}
+      {/* Breadcrumbs */}
       <Breadcrumbs
         items={[
           { label: 'Leistungen', href: '/leistungen' },
@@ -28,7 +28,7 @@ export default function Aluminiumfenster() {
               Aluprof Aluminiumfenster – MB-45 • MB-79N • MB-86N • MB-104N
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Vom kalten Innenraumsystem bis zum Passivhaus-Premium – schlanke Profile für moderne Architektur und höchste Anforderungen in Warendorf, Osnabrück und Münsterland
+              Vom kalten Innenraumsystem bis zum Passivhaus-Premium – schlanke Profile für moderne Architektur und höchste Anforderungen im Raum Warendorf, Münster und Osnabrück
             </p>
             <Link
               href="/kontakt"
@@ -48,7 +48,7 @@ export default function Aluminiumfenster() {
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Wir setzen auf die bewährten Aluprof MB-Serien – von kalten Innenraumsystemen (MB-45) bis hin zu hochdämmenden Passivhaus-Systemen (MB-104N). Schlanke Profile, höchste Stabilität und maximale Gestaltungsfreiheit für Neubau, Sanierung und Gewerbe in Warendorf und Umgebung.
+            Wir setzen auf die bewährten Aluprof MB-Serien – von kalten Innenraumsystemen (MB-45) bis hin zu hochdämmenden Passivhaus-Systemen (MB-104N). Schlanke Profile, höchste Stabilität und maximale Gestaltungsfreiheit für Neubau, Sanierung und Gewerbe im Raum Warendorf, Münster und Osnabrück.
           </p>
         </Container>
       </section>
@@ -65,7 +65,6 @@ export default function Aluminiumfenster() {
                 MB-45 ist ein schlankes, kaltes Aluminiumsystem ohne thermische Trennung – ideal für Innenräume, Trennwände, Wintergärten oder Türen, bei denen Wärmedämmung keine Rolle spielt.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
@@ -78,7 +77,7 @@ export default function Aluminiumfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 möglich
+                  Einbruchhemmung bis RC2 möglich
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -86,7 +85,7 @@ export default function Aluminiumfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Pulverbeschichtung in allen RAL-Farben
+                  Max. Flügelgewicht bis 130 kg (je nach Ausführung)
                 </li>
               </ul>
             </div>
@@ -115,23 +114,22 @@ export default function Aluminiumfenster() {
                 MB-79N – Das Standard-Wärmeschutzsystem
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-79N ist ein ausgewogenes Wärmeschutzsystem mit 79 mm Bautiefe – solide Dämmung, schlanke Optik und vielseitig einsetzbar für Neubau und Sanierung in Warendorf und Osnabrück.
+                MB-79N ist ein ausgewogenes Wärmeschutzsystem mit 79 mm Bautiefe – solide Dämmung, schlanke Optik und vielseitig einsetzbar für Neubau und Sanierung.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis 0,85 W/(m²K)
+                  Uw-Wert bis 0,84 W/(m²K) mit Dreifachverglasung
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Schallschutz bis Rw 45 dB
+                  Schallschutz bis Rw 43 dB
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 / RC3
+                  Einbruchhemmung bis RC3 möglich
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -139,7 +137,7 @@ export default function Aluminiumfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Viele Farben & Oberflächen (RAL, Dekorfolie, Eloxal)
+                  Thermisch getrennte Profile mit innovativen Isolatoren
                 </li>
               </ul>
             </div>
@@ -168,19 +166,14 @@ export default function Aluminiumfenster() {
                 MB-86N – Das hochdämmende System
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-86N mit 86 mm Bautiefe bietet exzellente Wärmedämmung und ist passivhausgeeignet – ideal für energieeffiziente Gebäude mit großen Glasflächen in Warendorf und Osnabrück.
+                MB-86N mit 86 mm Bautiefe bietet exzellente Wärmedämmung und ist passivhausgeeignet – ideal für energieeffiziente Gebäude mit großen Glasflächen.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis 0,75 W/(m²K)
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
-                  Passivhaus-tauglich mit Dreifachverglasung
+                  Uw-Wert bis 0,62 W/(m²K) mit Dreifachverglasung
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -188,11 +181,15 @@ export default function Aluminiumfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 / RC3 / RC4
+                  Einbruchhemmung bis RC4 möglich
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
                   Hohe Stabilität für große Flügel bis 300 kg
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold text-xl">✓</span>
+                  Passivhaus-tauglich mit Dreifachverglasung
                 </li>
               </ul>
             </div>
@@ -221,31 +218,30 @@ export default function Aluminiumfenster() {
                 MB-104N – Das Premium-Passivhaus-System
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-104N mit 104 mm Bautiefe ist das leistungsstärkste Aluprof-System – Passivhaus-tauglich selbst bei extremen Funktionsanforderungen, ohne teure Kryptonfüllung.
+                MB-104N mit 104 mm Bautiefe ist das leistungsstärkste Aluprof-System – Passivhaus-tauglich selbst bei extremen Funktionsanforderungen.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis 0,70 W/(m²K)
+                  Uw-Wert bis 0,53 W/(m²K) mit Dreifachverglasung
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Passivhaus ohne Krypton – kosteneffizient
+                  Schallschutz bis Rw 48 dB
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Maximaler Schallschutz bis Rw 48 dB
+                  Einbruchhemmung bis RC4 möglich
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 / RC3 / RC4
+                  Große Flügelgewichte bis 300 kg
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Höchste Stabilität für große Formate und schwere Verglasungen
+                  Passivhaus-zertifiziert ohne Kryptonfüllung
                 </li>
               </ul>
             </div>
@@ -265,6 +261,20 @@ export default function Aluminiumfenster() {
         </Container>
       </section>
 
+      {/* Neuer Abschnitt: Farb- und Oberflächen-Hinweis */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-2xl font-bold mb-6">
+              Vielfältige Oberflächenmöglichkeiten
+            </h3>
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              Für alle unsere Aluminiumfenster-Systeme realisieren wir nahezu alle RAL-Farben, hochwertige Eloxal-Oberflächen und bei ausgewählten Profilen auch moderne Folierungen. Die genaue Machbarkeit und das perfekte Finish besprechen wir in der persönlichen Beratung vor Ort im Raum Warendorf, Münster und Osnabrück.
+            </p>
+          </div>
+        </Container>
+      </section>
+
       {/* Call-to-Action */}
       <section className="bg-primary text-white py-16 md:py-24">
         <Container>
@@ -273,7 +283,7 @@ export default function Aluminiumfenster() {
               Bereit für Ihr neues Aluprof Aluminiumfenster?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir beraten Sie individuell zu MB-45, MB-79N, MB-86N oder MB-104N – kostenlos und vor Ort in Warendorf und Umgebung.
+              Wir beraten Sie individuell zu MB-45, MB-79N, MB-86N oder MB-104N – kostenlos und vor Ort im Raum Warendorf, Münster und Osnabrück.
             </p>
             <Link
               href="/kontakt"

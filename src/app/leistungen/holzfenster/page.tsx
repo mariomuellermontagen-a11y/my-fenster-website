@@ -2,17 +2,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import Breadcrumbs from '@/components/Breadcrumbs' // ← neu importiert
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
-  title: 'Holzfenster 68 mm, 80 mm & 92 mm mit Gutmann-Alu-Deckschalen | Gebrüder Müller',
-  description: 'Hochwertige Holzfenster mit 68, 80 und 92 mm Bautiefe – optional mit Gutmann-Aluminium-Deckschalen für maximale Langlebigkeit und Pflegeleichtigkeit in Warendorf und Osnabrück.',
+  title: 'Holzfenster 68 mm, 80 mm & 92 mm | Gebrüder Müller',
+  description: 'Hochwertige Holzfenster mit 68, 80 und 92 mm Bautiefe – natürlich, warm & nachhaltig, optional mit Gutmann-Alu-Deckschalen für maximale Langlebigkeit im Raum Warendorf, Münster und Osnabrück.',
 }
 
 export default function Holzfenster() {
   return (
     <div className="bg-white">
-      {/* Breadcrumbs – direkt oben eingebaut */}
+      {/* Breadcrumbs */}
       <Breadcrumbs
         items={[
           { label: 'Leistungen', href: '/leistungen' },
@@ -28,7 +28,7 @@ export default function Holzfenster() {
               Holzfenster – 68 mm • 80 mm • 92 mm
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Natürlich, warm & nachhaltig – optional mit hochwertigen Gutmann-Aluminium-Deckschalen für maximale Langlebigkeit in Warendorf, Osnabrück und Münsterland
+              Natürlich, warm & nachhaltig – aus hochwertigen Hölzern für behagliches Wohnen im Raum Warendorf, Münster und Osnabrück
             </p>
             <Link
               href="/kontakt"
@@ -48,33 +48,32 @@ export default function Holzfenster() {
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Wir fertigen Holzfenster in bewährten Bautiefen von 68 mm bis 92 mm – aus hochwertigen Hölzern wie Lärche, Eiche, Kiefer oder Meranti. Alle Systeme sind optional mit Gutmann-Aluminium-Deckschalen kombinierbar, was die Lebensdauer erheblich verlängert und die Pflege minimiert.
+            Wir fertigen Holzfenster in bewährten Bautiefen von 68 mm bis 92 mm – aus hochwertigen Hölzern wie Lärche, Eiche, Kiefer oder Meranti. Natürliche Wärme, hoher Wohnkomfort und nachhaltige Materialien für Neubau und Sanierung im Raum Warendorf, Münster und Osnabrück.
           </p>
         </Container>
       </section>
 
-      {/* Abschnitt 1: 68 mm Bautiefe */}
+      {/* Abschnitt 1: 68 mm */}
       <section className="bg-gray-50 py-16 md:py-24">
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                68 mm Bautiefe – Das kompakte Holzfenster
+                68 mm – Das kompakte Holzfenster
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Das 68-mm-System ist besonders schlank und lichtdurchlässig – ideal für Sanierungen und Projekte mit klassischer Optik und guter Energieeffizienz in Warendorf und Osnabrück.
+                Das 68-mm-System ist besonders schlank und lichtdurchlässig – ideal für Sanierungen und Projekte mit klassischer Optik und guter Energieeffizienz.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis ca. 0,85–0,95 W/(m²K) mit Dreifachverglasung
+                  Uw-Wert bis ca. 0,85 W/(m²K) mit Dreifachverglasung
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Schlanke Ansichtsbreiten für mehr Tageslicht
+                  Schlanke Ansichtsbreiten für maximale Tageslichtausbeute
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -86,7 +85,7 @@ export default function Holzfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Optional mit Gutmann-Aluminium-Deckschale
+                  Ideal für Altbausanierungen und klassische Optik
                 </li>
               </ul>
             </div>
@@ -94,7 +93,7 @@ export default function Holzfenster() {
             <div className="relative h-64 md:h-96">
               <Image
                 src="/68.png"
-                alt="Querschnitt 68-mm-Holzfenstersystem – schlankes Profil für Sanierung und klassische Optik, optional mit Gutmann-Alu-Deckschale"
+                alt="Querschnitt 68-mm-Holzfenstersystem – schlankes Profil für Sanierung und klassische Optik"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
@@ -106,24 +105,23 @@ export default function Holzfenster() {
         </Container>
       </section>
 
-      {/* Abschnitt 2: 80 mm Bautiefe */}
+      {/* Abschnitt 2: 80 mm */}
       <section className="py-16 md:py-24">
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-start md:flex-row-reverse">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                80 mm Bautiefe – Das ausgewogene Holzfenster
+                80 mm – Das ausgewogene Holzfenster
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Das 80-mm-System bietet einen exzellenten Kompromiss aus schlanker Optik und hoher Dämmung – ideal für energieeffiziente Neubauten und Sanierungen in Warendorf und Osnabrück.
+                Das 80-mm-System bietet einen exzellenten Kompromiss aus schlanker Optik und hoher Dämmung – ideal für energieeffiziente Neubauten und Sanierungen.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis ca. 0,80–0,85 W/(m²K)
+                  Uw-Wert bis ca. 0,80 W/(m²K)
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -139,7 +137,7 @@ export default function Holzfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Optional mit Gutmann-Aluminium-Deckschale für pflegeleichte Außenseite
+                  Natürliche Holzoptik mit hohem Wohnkomfort
                 </li>
               </ul>
             </div>
@@ -147,7 +145,7 @@ export default function Holzfenster() {
             <div className="relative h-64 md:h-96">
               <Image
                 src="/80.png"
-                alt="Querschnitt 80-mm-Holzfenstersystem – ausgewogene Dämmung und Stabilität, optional mit Gutmann-Alu-Deckschale"
+                alt="Querschnitt 80-mm-Holzfenstersystem – ausgewogene Dämmung und Stabilität"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
@@ -159,24 +157,23 @@ export default function Holzfenster() {
         </Container>
       </section>
 
-      {/* Abschnitt 3: 92 mm Bautiefe */}
+      {/* Abschnitt 3: 92 mm */}
       <section className="bg-gray-50 py-16 md:py-24">
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                92 mm Bautiefe – Das Premium-Holzfenster
+                92 mm – Das Premium-Holzfenster
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Das 92-mm-System ist unser leistungsstärkstes Holzfenster – maximale Dämmung und Stabilität für Passivhaus-Standards und extreme Anforderungen in Warendorf und Osnabrück.
+                Das 92-mm-System ist unser leistungsstärkstes Holzfenster – maximale Dämmung und Stabilität für Passivhaus-Standards und extreme Anforderungen.
               </p>
 
-              {/* Features-Übersicht */}
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis ca. 0,75–0,80 W/(m²K)
+                  Uw-Wert bis ca. 0,75 W/(m²K)
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -192,7 +189,7 @@ export default function Holzfenster() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Optional mit Gutmann-Aluminium-Deckschale – pflegeleicht und wetterfest
+                  Ideal für Passivhaus-Standards und extreme Anforderungen
                 </li>
               </ul>
             </div>
@@ -200,7 +197,7 @@ export default function Holzfenster() {
             <div className="relative h-64 md:h-96">
               <Image
                 src="/92.png"
-                alt="Querschnitt 92-mm-Holzfenstersystem – Premium-Dämmung und Stabilität für Passivhaus-Standards, optional mit Gutmann-Alu-Deckschale"
+                alt="Querschnitt 92-mm-Holzfenstersystem – Premium-Dämmung und Stabilität für Passivhaus-Standards"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
@@ -208,6 +205,20 @@ export default function Holzfenster() {
                 loading="lazy"
               />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Neuer Abschnitt: Farb- und Oberflächen-Hinweis */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-2xl font-bold mb-6">
+              Vielfältige Oberflächenmöglichkeiten
+            </h3>
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              Unsere Holzfenster-Systeme können optional mit hochwertigen Gutmann-Aluminium-Deckschalen kombiniert werden – für maximale Witterungsbeständigkeit und die volle Farbvielfalt von Aluminium (nahezu alle RAL-Farben, Feinstruktur, Eloxal). Die genaue Machbarkeit und das perfekte Finish besprechen wir in der persönlichen Beratung vor Ort im Raum Warendorf, Münster und Osnabrück.
+            </p>
           </div>
         </Container>
       </section>
@@ -220,7 +231,7 @@ export default function Holzfenster() {
               Bereit für Ihr neues Holzfenster?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir beraten Sie individuell zu 68 mm, 80 mm oder 92 mm – inklusive Gutmann-Aluminium-Deckschalen.
+              Wir beraten Sie individuell zu 68 mm, 80 mm oder 92 mm – kostenlos und vor Ort im Raum Warendorf, Münster und Osnabrück.
             </p>
             <Link
               href="/kontakt"

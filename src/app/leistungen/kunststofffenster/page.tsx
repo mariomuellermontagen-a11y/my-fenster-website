@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
   title: 'Kunststofffenster GreenEvolution & BlueEvolution | Gebrüder Müller',
-  description: 'Salamander GreenEvolution AD/MD & BlueEvolution 82/92 MD – hohe Energieeffizienz, Schallschutz und Sicherheit für Neubau & Sanierung in Warendorf und Osnabrück.',
+  description: 'Salamander GreenEvolution AD/MD & BlueEvolution 82/92 MD – hohe Energieeffizienz, Schallschutz und Sicherheit für Neubau & Sanierung im Raum Warendorf, Münster und Osnabrück.',
 }
 
 export default function Kunststofffenster() {
@@ -28,7 +28,7 @@ export default function Kunststofffenster() {
               Salamander Kunststofffenster – GreenEvolution & BlueEvolution
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              GreenEvolution AD/MD • BlueEvolution 82 MD • BlueEvolution 92 MD – für höchste Energieeffizienz und Passivhaus-Standards in Warendorf, Osnabrück und Münsterland
+              GreenEvolution AD/MD • BlueEvolution 82 MD • BlueEvolution 92 MD – für höchste Energieeffizienz und Passivhaus-Standards im Raum Warendorf, Münster und Osnabrück
             </p>
             <Link
               href="/kontakt"
@@ -48,7 +48,7 @@ export default function Kunststofffenster() {
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Wir setzen auf die bewährten Salamander-Serien GreenEvolution und BlueEvolution – von Anschlag- bis Mitteldichtungssystemen. Ob Standard-Neubau oder Passivhaus: Finden Sie das passende Profil für Ihre Anforderungen in Warendorf und Umgebung.
+            Wir setzen auf die bewährten Salamander-Serien GreenEvolution und BlueEvolution – von Anschlag- bis Mitteldichtungssystemen. Ob Standard-Neubau oder Passivhaus: Finden Sie das passende Profil für Ihre Anforderungen im Raum Warendorf, Münster und Osnabrück.
           </p>
         </Container>
       </section>
@@ -62,7 +62,7 @@ export default function Kunststofffenster() {
                 GreenEvolution AD – Das Anschlagdichtungssystem
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Das GreenEvolution AD ist ein vielseitiges Anschlagdichtungssystem mit 76 mm Bautiefe – ideal für kosteneffiziente Neubauten und Sanierungen. Es bietet solide Dämmwerte und ist in zahlreichen Farben und Formen verfügbar.
+                Das GreenEvolution AD ist ein vielseitiges Anschlagdichtungssystem mit 76 mm Bautiefe – ideal für kosteneffiziente Neubauten und Sanierungen. Es bietet solide Dämmwerte und ist in zahlreichen Formen verfügbar.
               </p>
 
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
@@ -261,8 +261,8 @@ export default function Kunststofffenster() {
         </Container>
       </section>
 
-      {/* Farb- und Dekor-Auswahl */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      {/* Farb- und Dekor-Auswahl – mit ID für Anker-Link von anderen Seiten */}
+      <section id="farbpalette" className="py-16 md:py-24 bg-gray-50">
         <Container>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Unsere Folierungen & Dekore
@@ -275,7 +275,7 @@ export default function Kunststofffenster() {
 
           {/* Akkordeon-Kategorien */}
           <div className="space-y-6 max-w-6xl mx-auto">
-            {/* 1. Bestseller */}
+            {/* Bestseller */}
             <details className="group bg-white rounded-xl shadow-sm overflow-hidden open:shadow-md transition-shadow">
               <summary className="flex justify-between items-center cursor-pointer p-6 text-xl font-bold text-gray-900 group-open:bg-gray-100 transition-colors">
                 <span>Bestseller</span>
@@ -309,7 +309,7 @@ export default function Kunststofffenster() {
               </div>
             </details>
 
-            {/* 2. matt cleanCOOL&WOOD */}
+            {/* matt cleanCOOL&WOOD */}
             <details className="group bg-white rounded-xl shadow-sm overflow-hidden open:shadow-md transition-shadow">
               <summary className="flex justify-between items-center cursor-pointer p-6 text-xl font-bold text-gray-900 group-open:bg-gray-100 transition-colors">
                 <span>matt cleanCOOL&WOOD</span>
@@ -433,10 +433,6 @@ export default function Kunststofffenster() {
                   <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Basaltgrau</p>
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
-                  <Image src="/farben/schiefergraumatt.avif" alt="Schiefergraumatt – schieferartiges Grau matt" fill className="object-cover" quality={85} loading="lazy" />
-                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Schiefergraumatt</p>
-                </div>
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                   <Image src="/farben/streifen-douglasie.avif" alt="Streifen-Douglasie – gestreifte Douglasien-Holzoptik" fill className="object-cover" quality={85} loading="lazy" />
                   <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Streifen-Douglasie</p>
                 </div>
@@ -471,32 +467,50 @@ export default function Kunststofffenster() {
                   <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">SchwarzUltimatt</p>
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
-                  <Image src="/farben/weissantik.avif" alt="Weiß Antik – antik anmutendes Weiß" fill className="object-cover" quality={85} loading="lazy" />
-                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">WeißAntik</p>
+                  <Image src="/farben/schiefergraumatt.avif" alt="Schiefergraumatt – schieferartiges Grau matt" fill className="object-cover" quality={85} loading="lazy" />
+                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Schiefergraumatt</p>
                 </div>
+              </div>
+            </details>
+
+            {/* 6. Holz */}
+            <details className="group bg-white rounded-xl shadow-sm overflow-hidden open:shadow-md transition-shadow">
+              <summary className="flex justify-between items-center cursor-pointer p-6 text-xl font-bold text-gray-900 group-open:bg-gray-100 transition-colors">
+                <span>Holz</span>
+                <span className="text-primary text-2xl group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <div className="p-6 pt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
-                  <Image src="/farben/whiteash.avif" alt="White Ash – helle Eschenoptik" fill className="object-cover" quality={85} loading="lazy" />
-                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">WhiteAsh</p>
-                </div>
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
-                  <Image src="/farben/larchwhite.avif" alt="Larch White – helle Lärchenoptik" fill className="object-cover" quality={85} loading="lazy" />
-                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">LarchWhite</p>
+                  <Image src="/farben/mahagoni.avif" alt="Mahagoni – edle Mahagoni-Holzoptik" fill className="object-cover" quality={85} loading="lazy" />
+                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Mahagoni</p>
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                   <Image src="/farben/bergkiefer.avif" alt="Bergkiefer – natürliche Kiefernoptik" fill className="object-cover" quality={85} loading="lazy" />
                   <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Bergkiefer</p>
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
-                  <Image src="/farben/mahagoni.avif" alt="Mahagoni – edle Mahagoni-Holzoptik" fill className="object-cover" quality={85} loading="lazy" />
-                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Mahagoni</p>
-                </div>
-                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                   <Image src="/farben/nebrasca.avif" alt="Nebrasca – Nebraska-Holzoptik" fill className="object-cover" quality={85} loading="lazy" />
                   <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Nebrasca</p>
                 </div>
                 <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                  <Image src="/farben/whiteash.avif" alt="White Ash – helle Eschenoptik" fill className="object-cover" quality={85} loading="lazy" />
+                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">WhiteAsh</p>
+                </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                  <Image src="/farben/weissantik.avif" alt="Weiß Antik – antik anmutendes Weiß" fill className="object-cover" quality={85} loading="lazy" />
+                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">WeißAntik</p>
+                </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
                   <Image src="/farben/polareiche.avif" alt="Polareiche – kühle Eichenoptik" fill className="object-cover" quality={85} loading="lazy" />
                   <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Polareiche</p>
+                </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                  <Image src="/farben/larchwhite.avif" alt="Larch White – helle Lärchenoptik" fill className="object-cover" quality={85} loading="lazy" />
+                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">LarchWhite</p>
+                </div>
+                <div className="relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                  <Image src="/farben/streifen-douglasie.avif" alt="Streifen-Douglasie – gestreifte Douglasien-Holzoptik" fill className="object-cover" quality={85} loading="lazy" />
+                  <p className="absolute inset-x-0 bottom-0 bg-black/70 text-white text-center text-sm py-2">Streifen-Douglasie</p>
                 </div>
               </div>
             </details>
@@ -521,7 +535,7 @@ export default function Kunststofffenster() {
               Bereit für Ihr neues Salamander Kunststofffenster?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir beraten Sie individuell zu GreenEvolution oder BlueEvolution – kostenlos und unverbindlich.
+              Wir beraten Sie individuell zu GreenEvolution oder BlueEvolution – kostenlos und vor Ort im Raum Warendorf, Münster und Osnabrück.
             </p>
             <Link
               href="/kontakt"

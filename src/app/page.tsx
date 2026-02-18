@@ -5,28 +5,32 @@ import ReferenzenTeaser from '@/components/ReferenzenTeaser'
 import KontaktTeaser from '@/components/KontaktTeaser'
 
 export const metadata = {
-  title: 'Gebrüder Müller Fenster GmbH – Fenster & Türen Montage Warendorf, Osnabrück',
+  title: 'Gebrüder Müller Fenster GmbH – Fenster, Haustüren & Hebeschiebetüren | Warendorf, Osnabrück',
   description:
-    'Professionelle Montage von Fenstern, Haustüren und Hebeschiebetüren in Warendorf, Osnabrück und Münsterland. Hochwertige Lösungen – persönliche Beratung.',
-  // OpenGraph & Keywords können hier überschrieben werden, falls gewünscht
+    'Professionelle Montage von Fenstern, Haustüren und Hebeschiebetüren im Raum Warendorf, Münster und Osnabrück. Persönliche Beratung, hochwertige Lösungen und zuverlässiger Service aus einer Hand.',
+  openGraph: {
+    title: 'Gebrüder Müller Fenster GmbH – Ihr Partner für Fenster & Türen',
+    description: 'Fenster, Haustüren, Hebeschiebetüren – individuell, sicher und energieeffizient im Raum Warendorf, Münster und Osnabrück.',
+    images: '/og-image.jpg' // Falls du ein OG-Bild hast
+  }
 }
 
 export default function Home() {
   return (
     <>
-      {/* Hero – Hauptbild oben */}
+      {/* Hero – emotionaler Einstieg */}
       <Hero />
 
-      {/* Leistungen-Teaser – hier kommen wahrscheinlich Produktbilder */}
+      {/* Leistungen-Teaser – jetzt mit 3 Karten und Verweis */}
       <LeistungenTeaser />
 
-      {/* Referenzen-Teaser – echte Projektbilder */}
+      {/* Referenzen-Teaser – echte Projekte zeigen Vertrauen */}
       <ReferenzenTeaser />
 
-      {/* Kontakt-Teaser – Formular oder Karte */}
+      {/* Kontakt-Teaser – starker Abschluss */}
       <KontaktTeaser />
 
-      {/* Optional: Weitere Sections, z. B. Warum Wir, Vorteile */}
+      {/* Optional: Warum wir? oder Vorteile – wenn du magst */}
       {/* <WarumWir /> */}
     </>
   )

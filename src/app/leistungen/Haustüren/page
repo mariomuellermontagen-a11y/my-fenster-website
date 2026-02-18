@@ -1,22 +1,22 @@
-// src/app/leistungen/hebeschiebetueren/page.tsx
+// src/app/leistungen/haustueren/page.tsx
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata = {
-  title: 'Hebeschiebetüren Kunststoff, Aluminium & Holz | Gebrüder Müller',
-  description: 'Großformatige Hebeschiebetüren – Salamander EvolutionDrive (Kunststoff), Aluprof MB-77HS (Aluminium) und Holz 68/80 mm mit Gutmann-Alu-Deckschalen – barrierefrei & hochgedämmt im Raum Warendorf, Münster und Osnabrück.',
+  title: 'Haustüren Kunststoff, Aluminium & Holz | Gebrüder Müller',
+  description: 'Moderne Haustüren in Kunststoff, Aluminium oder Holz – individuell angepasst an Einbruchsschutz, Design und funktionale Anforderungen, inklusive barrierefreier Nullschwellen im Raum Warendorf, Münster und Osnabrück.',
 }
 
-export default function Hebeschiebetueren() {
+export default function Haustueren() {
   return (
     <div className="bg-white">
       {/* Breadcrumbs */}
       <Breadcrumbs
         items={[
           { label: 'Leistungen', href: '/leistungen' },
-          { label: 'Hebeschiebetüren' }
+          { label: 'Haustüren' }
         ]}
       />
 
@@ -25,10 +25,10 @@ export default function Hebeschiebetueren() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Hebeschiebetüren – Kunststoff, Aluminium & Holz
+              Haustüren – Kunststoff, Aluminium & Holz
             </h1>
             <p className="text-xl md:text-2xl opacity-90 mb-10">
-              Barrierefrei, hochgedämmt und lichtdurchflutet – für fließende Übergänge nach draußen im Raum Warendorf, Münster und Osnabrück
+              Ihre Haustür ist der erste Eindruck – funktional, sicher und stilvoll. Ob klassisch, modern oder barrierefrei – wir finden die Passende für Sie im Raum Warendorf, Münster und Osnabrück.
             </p>
             <Link
               href="/kontakt"
@@ -44,40 +44,32 @@ export default function Hebeschiebetueren() {
       <section className="py-16 md:py-24">
         <Container>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Unsere Hebeschiebetür-Systeme im Detail
+            Unsere Haustüren-Systeme im Detail
           </h2>
 
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-4xl mx-auto text-center">
-            Hebeschiebetüren (HST) schaffen großzügige, barrierefreie Übergänge zwischen Wohnraum und Terrasse/Garten. Wir bieten drei starke Systeme: Kunststoff (Salamander EvolutionDrive), Aluminium (Aluprof MB-77HS) und Holz (68/80 mm mit optionalen Gutmann-Alu-Deckschalen).
+            Eine Haustür ist mehr als nur ein Eingang – sie schützt Ihr Zuhause, passt zu Ihrem Stil und macht den Alltag einfacher. Wir bieten Modelle in Kunststoff, Aluminium und Holz, die wir individuell auf Einbruchsschutz, Design und funktionale Anforderungen anpassen. Ob funktional, modern oder klassisch – und barrierefrei mit Nullschwelle. Lassen Sie uns gemeinsam Ihre perfekte Haustür planen.
           </p>
         </Container>
       </section>
 
-      {/* Abschnitt 1: Salamander EvolutionDrive (Kunststoff) */}
+      {/* Abschnitt 1: Kunststoff-Haustüren */}
       <section className="bg-gray-50 py-16 md:py-24">
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Salamander EvolutionDrive – Kunststoff-Hebeschiebetüren
+                Kunststoff-Haustüren – günstig & pflegeleicht
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                EvolutionDrive ist ein modernes, hochgedämmtes Kunststoff-Hebeschiebesystem mit exzellenter Wärmedämmung und einfacher Bedienung – ideal für energieeffiziente Neubauten und Sanierungen mit großen Öffnungen.
+                Unsere Kunststoff-Haustüren sind kostengünstig, langlebig und extrem pflegeleicht – ideal für Familienhäuser und Budget-Projekte. Sie bieten solide Dämmung und Sicherheit ohne großen Aufwand.
               </p>
 
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis 0,78 W/(m²K) mit Dreifachverglasung
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
-                  Barrierefrei (Nullschwelle möglich)
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
-                  Schallschutz bis Rw 45 dB
+                  Hohe Wärmedämmung (Uw-Wert bis 0,90 W/(m²K))
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
@@ -85,19 +77,23 @@ export default function Hebeschiebetueren() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Flügelgewichte bis 400 kg
+                  Pflegeleicht und witterungsbeständig
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Große Elemente bis 6,5 m Breite
+                  Viele Design-Optionen (Verglasung, Griffmuscheln)
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold text-xl">✓</span>
+                  Barrierefrei mit Nullschwelle
                 </li>
               </ul>
             </div>
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/ED82.png"
-                alt="Querschnitt Salamander EvolutionDrive Kunststoff-Hebeschiebesystem – hochgedämmt, barrierefrei, Flügelgewichte bis 400 kg"
+                src="/haustuer-kunststoff.png" // Passe an dein Bild an
+                alt="Kunststoff-Haustür – günstig, pflegeleicht und sicher mit barrierefreier Nullschwelle"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
@@ -109,51 +105,47 @@ export default function Hebeschiebetueren() {
         </Container>
       </section>
 
-      {/* Abschnitt 2: Aluprof MB-77HS (Aluminium) */}
+      {/* Abschnitt 2: Aluminium-Haustüren */}
       <section className="py-16 md:py-24">
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-start md:flex-row-reverse">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Aluprof MB-77HS – Aluminium-Hebeschiebetüren
+                Aluminium-Haustüren – langlebig & großformatig
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                MB-77HS ist ein hochdämmendes Aluminium-Hebeschiebesystem mit 77 mm Bautiefe – schlanke Profile, hohe Stabilität und exzellente Wärmedämmung. Ideal für moderne Architektur mit großen Öffnungen und hohen Anforderungen.
+                Unsere Aluminium-Haustüren sind extrem robust und langlebig – perfekt für große Elemente und moderne Designs, die Wind und Wetter trotzen.
               </p>
 
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis 0,84 W/(m²K) mit Dreifachverglasung
+                  Hohe Stabilität für große Türen (bis 3 m Höhe)
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Barrierefrei (Nullschwelle möglich)
+                  Einbruchhemmung RC3 / RC4 möglich
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Schallschutz bis Rw 47 dB
+                  Exzellente Wärmedämmung (Uw-Wert bis 0,80 W/(m²K))
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 / RC3
+                  Moderne Optik mit Feinstruktur-Oberflächen
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Flügelgewichte bis 600 kg
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold text-xl">✓</span>
-                  Große Elemente bis 3,3 m Höhe und 6,5 m Breite
+                  Barrierefrei mit Nullschwelle
                 </li>
               </ul>
             </div>
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/HS77.png"
-                alt="Querschnitt Aluprof MB-77HS Aluminium-Hebeschiebesystem – 77 mm Bautiefe, barrierefrei, Flügelgewichte bis 600 kg"
+                src="/haustuer-aluminium.png" // Passe an dein Bild an
+                alt="Aluminium-Haustür – langlebig, großformatig und sicher mit barrierefreier Nullschwelle"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
@@ -165,47 +157,47 @@ export default function Hebeschiebetueren() {
         </Container>
       </section>
 
-      {/* Abschnitt 3: Holz-Hebeschiebetüren */}
+      {/* Abschnitt 3: Holz-Haustüren */}
       <section className="bg-gray-50 py-16 md:py-24">
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Holz-Hebeschiebetüren – 68 mm & 80 mm
+                Holz-Haustüren – Wärme & natürlicher Look
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Unsere Holz-Hebeschiebetüren in 68 mm (ideal für Altbausanierung) und 80 mm (ideal für Neubau) bieten natürliche Wärme und Wohnkomfort.
+                Unsere Holz-Haustüren strahlen Wärme und Natürlichkeit aus – ideal für klassische und behagliche Eingänge, die Ihr Zuhause einladend machen.
               </p>
 
               <h3 className="text-2xl font-bold mb-4">Wichtige Features</h3>
               <ul className="space-y-4 text-lg text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Uw-Wert bis ca. 0,80–0,95 W/(m²K) je nach Bautiefe und Verglasung
+                  Natürlicher Look mit hoher Wärmedämmung (Uw-Wert bis 0,85 W/(m²K))
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Barrierefrei (Nullschwelle möglich)
+                  Einbruchhemmung RC2 / RC3 möglich
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Schallschutz bis Rw 44 dB
+                  Behaglicher Wohnkomfort durch natürliche Materialien
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Einbruchhemmung RC2 / RC3
+                  Individuelle Designs (Verglasung, Ornamente, Griffe)
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary font-bold text-xl">✓</span>
-                  Flügelgewichte bis 400 kg
+                  Barrierefrei mit Nullschwelle
                 </li>
               </ul>
             </div>
 
             <div className="relative h-64 md:h-96">
               <Image
-                src="/HS80.png"
-                alt="Querschnitt Holz-Hebeschiebetüren 68/80 mm – natürliche Optik, barrierefrei und witterungsbeständig"
+                src="/haustuer-holz.png" // Passe an dein Bild an
+                alt="Holz-Haustür – warmer, natürlicher Look mit barrierefreier Nullschwelle"
                 fill
                 className="object-contain rounded-2xl shadow-xl"
                 quality={85}
@@ -217,17 +209,16 @@ export default function Hebeschiebetueren() {
         </Container>
       </section>
 
-      {/* Neuer Abschnitt: Farb- und Oberflächen-Hinweis */}
+      {/* Abschnitt: Individuelle Anpassung & Barrierefreiheit */}
       <section className="py-16 md:py-24">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-6">
-              Vielfältige Oberflächenmöglichkeiten
+              Individuelle Anpassung für Ihre Anforderungen
             </h3>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Unsere Hebeschiebetüren-Systeme bieten vielseitige Oberflächen:  
-              Kunststoff-Modelle nutzen die gleiche umfangreiche Folierungsvielfalt wie unsere Salamander-Fenster – <Link href="/leistungen/kunststofffenster#farbpalette" className="text-primary hover:underline font-medium">entdecken Sie die Möglichkeiten direkt in unserer Farbauswahl</Link>.  
-              Aluminium-Systeme bieten nahezu alle RAL-Farben und Eloxal, Holz-Modelle können mit Gutmann-Aluminium-Deckschalen (RAL, Feinstruktur, Eloxal) kombiniert werden. Die genaue Machbarkeit und das passende Finish besprechen wir in der persönlichen Beratung vor Ort im Raum Warendorf, Münster und Osnabrück.
+              Wir gehen auf Ihre Wünsche ein: Von Einbruchsschutz (RC2/RC3) über Design (funktional, modern oder klassisch) bis hin zu funktionalen Anforderungen wie Schallschutz oder Energieeffizienz.  
+              Alle unsere Haustüren können mit barrierefreien Nullschwellen ausgestattet werden – für bequemen, schwellenlosen Zugang.
             </p>
           </div>
         </Container>
@@ -238,10 +229,10 @@ export default function Hebeschiebetueren() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Bereit für Ihre neuen Hebeschiebetüren?
+              Bereit für Ihre neue Haustür?
             </h2>
             <p className="text-xl mb-10 opacity-90">
-              Wir beraten Sie individuell zu Kunststoff (EvolutionDrive), Aluminium (MB-77HS) oder Holz (68/80 mm) – kostenlos und vor Ort im Raum Warendorf, Münster und Osnabrück.
+              Wir beraten Sie individuell zu Kunststoff, Aluminium oder Holz – kostenlos und vor Ort im Raum Warendorf, Münster und Osnabrück.
             </p>
             <Link
               href="/kontakt"
